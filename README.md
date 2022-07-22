@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@DenisaCG](https://github.com/DenisaCG/)
+* [@hbcarlos](https://github.com/hbcarlos/)
 
