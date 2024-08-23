@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - hatchling 
-    - hatch-nodejs-version
+    - hatchling >=1.5.0
+    - hatch-nodejs-version >=0.3.2
     - hatch-jupyter-builder
     - jupyterlab >=4.0.0,<5
   run:
