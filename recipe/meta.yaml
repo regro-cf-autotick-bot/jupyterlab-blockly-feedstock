@@ -17,7 +17,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - nodejs
     - hatchling >=1.5.0
     - hatch-nodejs-version >=0.3.2
     - hatch-jupyter-builder
