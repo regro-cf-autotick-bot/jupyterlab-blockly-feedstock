@@ -24,6 +24,7 @@ requirements:
     - hatch-jupyter-builder
   run:
     - python >=3.8
+    - jupyterlab_widgets ~=3.0.11
 
 test:
   imports:
