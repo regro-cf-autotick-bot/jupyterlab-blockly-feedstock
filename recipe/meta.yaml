@@ -11,9 +11,7 @@ source:
 
 build:
   noarch: python
-  script: |
-      {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-      find $PREFIX
+  script:  {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation;  find $PREFIX
   number: 0
 
 requirements:
