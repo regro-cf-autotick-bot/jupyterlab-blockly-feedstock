@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-blockly" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_blockly-{{ version }}.tar.gz
-  sha256: f8cb9ae50969326773373e3282d04439250aa1299b09d96513203d99f8c5906b
+  sha256: 0737bfbba9f2c7dbde28475e9d269419254a49974873d0de2fdc94134c69f7f2
 
 build:
   noarch: python
@@ -18,9 +18,13 @@ requirements:
   host:
     - jupyter-packaging
     - pip
-    - python >=3.7
+    - python >=3.8
+    - hatchling >=1.5.0
+    - hatch-nodejs-version >=0.3.2
+    - hatch-jupyter-builder
   run:
-    - python >=3.7
+    - python >=3.8
+    - jupyterlab_widgets ~=3.0.11
 
 test:
   imports:
